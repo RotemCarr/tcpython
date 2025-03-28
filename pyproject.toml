@@ -1,0 +1,26 @@
+[project]
+name = "tcpython"
+version = "0.1.0"
+description = "a utillity library for establishing TCP/IP connection between clients and servers"
+authors = [
+    {name = "Rotem Carr",email = "155629245+RotemCarr@users.noreply.github.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "scapy (>=2.6.1,<3.0.0)"
+]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+pytest-html = "^4.1.1"
+ruff = "^0.11.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
