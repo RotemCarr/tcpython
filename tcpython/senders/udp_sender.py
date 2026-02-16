@@ -49,7 +49,6 @@ def receive_response(timeout=2, expected_dst_port=None):
         print("⌛ No ICMP response received")
     finally:
         s.close()
-# Use your UDPPacket class here
 
 eth = Ether(dst_mac=b"\xff\xff\xff\xff\xff\xff", src_mac=b"\xff\xff\xff\xff\xff\xff", ether_type=2048)
 ip = IP("192.168.1.10", "192.168.1.20", 30, 17)
